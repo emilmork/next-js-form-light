@@ -1,5 +1,18 @@
+import Button from "../components/button";
+import { Title } from "../components/text";
+import { Container, Header } from "./base";
+
 export default () => {
-    return <div>
-        <h2>Hello</h2>
-    </div>
+  return (
+    <>
+      <Header>
+        <Title>#Zoogle forms</Title>
+      </Header>
+      <Container>
+        <Button href="/form" variant="contained" color="primary">
+          Create new form
+        </Button>
+      </Container>
+    </>
+  );
 };
